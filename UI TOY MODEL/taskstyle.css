@@ -1,0 +1,94 @@
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bad-script-regular {
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Lexend",sans-serif;
+}
+
+.container {
+    max-width: auto;
+}
+
+
+[data-bs-theme="light"] .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.list-group-item {
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5rem;
+    margin-bottom: 8px; 
+    border-left: 6px solid transparent;
+    border-right: 1px solid var(--bs-list-group-border-color); 
+}
+
+.list-group-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+
+.task-content {
+    gap: 10px; 
+}
+
+
+.task-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+.task-actions {
+    min-width: 90px; 
+}
+
+
+.list-group-item.completed {
+    border-left-color: var(--bs-success); 
+    opacity: 0.8;
+}
+
+.list-group-item.completed .task-text {
+    text-decoration: line-through;
+    color: var(--bs-secondary-color); 
+}
+
+
+.list-group-item.editing .task-text {
+    text-decoration: none !important;
+}
+
+
+.due-date-badge {
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 0.3em 0.6em;
+}
+
+
+
+[data-bs-theme="dark"] .card {
+    border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+[data-bs-theme="dark"] .list-group-item {
+    border-left: 6px solid transparent;
+}
+
+[data-bs-theme="dark"] .list-group-item.completed {
+    background-color: #1b1b1b; 
+}
